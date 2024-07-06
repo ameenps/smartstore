@@ -1,0 +1,18 @@
+{% extends 'blank_layout.html' %}
+
+
+{% block content %}
+<!-- featured catogaries -->
+{% if messages %}
+    <div class="small-container" >
+    {% for message in messages%}
+    <br><br><br><br><br><br><br>
+       <li class="{{ message.tags }}"> {{ message }} </li>
+       <br><br><br><br><br><br><br>
+    {% endfor %}   
+
+</div>
+{% else %}
+{% include 'cart_container.html' %}
+{% endif %}
+{% endblock content %}

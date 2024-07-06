@@ -1,0 +1,72 @@
+{% extends 'blank_layout.html' %}
+
+{% block content %}
+   
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+    }
+    h1 {
+        color: #333;
+    }
+    .contact-info {
+        margin-bottom: 20px;
+    }
+    .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .contact-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .contact-form button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    .contact-form button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+<h1>Contact Us</h1>
+<p>We're here to help and answer any questions you might have. We look forward to hearing from you.</p>
+
+<div class="contact-info">
+    <h2>Contact Information</h2>
+    <p><strong>Address:</strong> 123 SmartStore Avenue, Shop City, Commerce State, 12345</p>
+    <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+    <p><strong>Email:</strong> support@smartstore.com</p>
+    <p><strong>Business Hours:</strong> Monday to Friday, 9 AM - 6 PM</p>
+</div><br><br><br><br>
+
+<!-- <div class="contact-form">
+    <h2>Send Us a Message</h2>
+    <form action="/submit_contact_form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div> -->
+</body>
+{% endblock content %}
